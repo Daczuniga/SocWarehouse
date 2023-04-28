@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="style.css" rel="stylesheet" />
+    <title>openweathermap</title>
+  </head>
+
+<!-- WEATHER API BELOW -->
+<html>
+  <head>
+    <script>
+      async function getWeatherData() {
+        var city = prompt("Enter city: ");
+        var API_KEY = "0d67e25679c7f6d5b69f3d87029aee75";
+        var apiUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${0d67e25679c7f6d5b69f3d87029aee75}`;
+
+;
+
+        var response = await fetch(apiUrl);
+        var weatherData = await response.json();
+
+        console.log(weatherData);
+        
+      }
+    </script>
+  </head>
+  <body onload="getWeatherData()">
+    weather placeholder
+  </body>
+
+<!-- WEATHER API ABOVE -->
+
+
+  <body>
+  <h1>Weather Dashboard</h1>  
+  <h3>Search for a City</h3>
+</body>
+
+ 
+</html>

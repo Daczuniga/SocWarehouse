@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+
+  <meta charset="UTF-8">
+  <title>Coding Assesment </title>
+  <link rel="stylesheet" type="text/css" href="./assets/css/jass.css">
+  <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+  <link rel="stylesheet" type="html" href="HighScores.html">
+</head>
+        <a href= "HighScores.html">See Highscores</a>
+    <button id="start-button">BEGIN QUIZ</button>
+<p id="timer"></p>
+
+<script>
+  var count = 60;
+  var intervalId;
+
+  document.getElementById("start-button").addEventListener("click", function() {
+    intervalId = setInterval(() => {
+      count--;
+      document.getElementById("timer").innerHTML = count;
+      if (count === 0) {
+        clearInterval(intervalId);
+        document.getElementById("timer").innerHTML = "Times up! How'd you do?!";
+      }
+    }, 1000);
+  });
+</script>
+
+<html>
+  <head><head>
+  </body></head>
+ 
+    <p>
+        <h2>Coding Quiz Challange</h2>
+        Try to answer the most questions correct in the given time in the space above
+    </p>
+    <body style="text-align: center;"></body>
+  </body>
+</html>
+
+
+

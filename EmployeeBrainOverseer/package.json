@@ -1,0 +1,25 @@
+{
+  "name": "employeebrainoverseer",
+  "version": "1.0.0",
+  "description": "The purpose of this project is to aid employers in sorting out employess in a database and allowing viewing of said goal easy.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Daczuniga/EmployeeBrainOverseer.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Daczuniga/EmployeeBrainOverseer/issues"
+  },
+  "homepage": "https://github.com/Daczuniga/EmployeeBrainOverseer#readme",
+  "dependencies": {
+    "console.table": "^0.10.0",
+    "inquirer": "^8.2.4",
+    "mysql2": "^3.2.3"
+  }
+}
